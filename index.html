@@ -10,16 +10,34 @@
       <style>
         /* Swiper Carousel Styles */
         .swiper {
-            width: 100%;
-            height: 100vh;
+          width: 600px;
+          height: 300%;
+          overflow: visible;;
         }
 
-        .swiper-slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: brightness(0.6);
+        .swiper-slide {
+          width: 80%;
+          height: 100%;
+          border-radius: 15px;
+          overflow: hidden;
+          transition: transform 0.3s ease;
+          margin-left: auto;
+          margin-right: auto;
         }
+        .swiper-slide img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          filter: brightness(0.6);
+        }
+
+.swiper-slide-active img {
+    filter: brightness(1);
+}
+
+/* Optional: Add shadow for depth */
+.swiper-slide {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
         /* Header Content */
         .header_content {
@@ -30,7 +48,7 @@
             text-align: center;
             color: white;
             z-index: 2;
-            max-width: 800px;
+            max-width: 600px;
             padding: 0 20px;
         }
 
@@ -114,22 +132,25 @@
       <!-- Swiper JS -->
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
       <script>
-          // Initialize Swiper
-          var swiper = new Swiper(".mySwiper", {
-              loop: true,
-              autoplay: {
-                  delay: 5000,
-                  disableOnInteraction: false,
-              },
-              pagination: {
-                  el: ".swiper-pagination",
-                  clickable: true,
-              },
-              navigation: {
-                  nextEl: ".swiper-button-next",
-                  prevEl: ".swiper-button-prev",
-              },
-          });
+        // Initialize Swiper
+        const Swiper = new Swiper(".mySwiper", {
+          loop: true,
+          centeredSlides: true,
+          spaceBetween: 20,
+          slidesPerView: "auto", // Note: "auto" should be a string
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
       </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
