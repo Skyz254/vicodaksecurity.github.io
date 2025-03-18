@@ -7,227 +7,141 @@
       <title>Vicodak Security Agency</title>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
       <link rel="stylesheet" href="./css/styles.css" />
-      <style>
-        /* Swiper Carousel Styles */
-        .swiper {
-          width: 600px;
-          height: 300%;
-          overflow: visible;;
-        }
-
-        .swiper-slide {
-          width: 80%;
-          height: 100%;
-          border-radius: 15px;
-          overflow: hidden;
-          transition: transform 0.3s ease;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        .swiper-slide img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          filter: brightness(0.6);
-        }
-
-.swiper-slide-active img {
-    filter: brightness(1);
-}
-
-/* Optional: Add shadow for depth */
-.swiper-slide {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-        /* Header Content */
-        .header_content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-            z-index: 2;
-            max-width: 600px;
-            padding: 0 20px;
-        }
-
-        /* Navigation Styles */
-        .nav {
-            padding: 20px 0;
-            background: rgba(0, 0, 0, 0.3);
-        }
-
-        .nav_list {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            list-style: none;
-            padding: 0;
-        }
-
-        .nav_link {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        /* Section Styles */
-        .section {
-            padding: 60px 20px;
-        }
-
-        /* Service Card Styles */
-        .service-card {
-            background: white;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .swiper {
-                height: 70vh;
-            }
-            
-            .nav_list {
-                gap: 15px;
-                flex-wrap: wrap;
-            }
-            
-            .header_main_title {
-                font-size: 24px;
-            }
-        }
-    </style>
+      
   </head>
   <body>
-   
-      <!-- Carousel Section -->
-      <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                  <img src="./images/team-1.jpg" alt="Security Service 1" />
-              </div>
-              <div class="swiper-slide">
-                  <img src="./images/team-2.jpg" alt="Security Service 2" />
-              </div>
-              <div class="swiper-slide">
-                  <img src="./images/team-3.jpg" alt="Security Service 3" />
-              </div>
-              
-          </div>
-          <!-- Add Pagination and Navigation -->
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-      </div>
-  
-      
-  
-      <!-- Swiper JS -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-      <script>
-        // Initialize Swiper
-        const Swiper = new Swiper(".mySwiper", {
-          loop: true,
-          centeredSlides: true,
-          spaceBetween: 20,
-          slidesPerView: "auto", // Note: "auto" should be a string
-          autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vicodak Security Agency</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <style>
-      .carousel-container {
-          width: 80%;
-          max-width: 1000px;
-          margin: 50px auto;
-          padding: 20px;
-          position: relative;
-          border-radius: 20px;
-          overflow: hidden;
-          box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-          background: rgba(255, 255, 255, 0.1);
-          backdrop-filter: blur(10px);
-      }
-      
-      .carousel-slide {
-          display: flex;
-          animation: slide 12s infinite;
-          margin-left: 0;
-      }
-      
-      .carousel-slide img {
-          width: 100%;
-          height: 400px;
-          object-fit: cover;
-          border-radius: 15px;
-          margin: 0 10px;
-          flex-shrink: 0;
-      }
-      
-      @keyframes slide {
-          0%, 20% { margin-left: 0; }
-          25%, 45% { margin-left: -100%; }
-          50%, 70% { margin-left: -200%; }
-          75%, 95% { margin-left: -300%; }
-          100% { margin-left: 0; }
-      }
-      
-      /* Pause animation on hover */
-      .carousel-container:hover .carousel-slide {
-          animation-play-state: paused;
-      }
-      
-      /* Responsive design */
-      @media (max-width: 768px) {
-          .carousel-container {
-              width: 90%;
-          }
-          
-          .carousel-slide img {
-              height: 300px;
-          }
-      }
-      </style>
-  </head>
-  <body>
-      <div class="header_content">
-        <div class="container">
-          <div class="header_container">
-            <h1 class="header_main_title">
-              Transforming Cybersecurity visions into digital protection
-            </h1>
-            <p class="header_p">
-              Vicodak security is the leading security services company that offers intelligence led security and risk management solutions that are critical in modern coporate firms
-            </p>
-            <a href="#" class="header_btn">Learn more</a>
-          </div>
+      <!--Main Slider Section -->
+      <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Contact</a>
+        </nav>
+      </header>
+
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="images/img1.jpg">
+                <div class="content">
+                    <div class="author">Bruce</div>
+                    <div class="title">VICODAK SECURITIES</div>
+                    <div class="topic">ICT</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Vicodak security is the leading security services company that offers intelligence led security and risk management solutions that are critical in modern coporate firms
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/img2.jpg">
+                <div class="content">
+                    <div class="author">bRUCE</div>
+                    <div class="title">VICODAK SECURITES</div>
+                    <div class="topic">PEST CONTROL</div>
+                    <div class="des">
+                      To be a leading professional security company in the provision of security services with integrity in Kenya and beyond.
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/img3.jpg">
+                <div class="content">
+                    <div class="author">Bruce</div>
+                    <div class="title">VICODAK SECURITIES</div>
+                    <div class="topic">CCTV</div>
+                    <div class="des">
+                      To be a leading professional security company in the provision of security services with integrity in Kenya and beyond.
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/img4.jpg">
+                <div class="content">
+                    <div class="author">Bruce</div>
+                    <div class="title">VICODAK SECURITIES</div>
+                    <div class="topic">ADVISORY</div>
+                    <div class="des">
+                      To be a leading professional security company in the provision of security services with integrity in Kenya and beyond.
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </header>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="images/img1.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/img2.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/img3.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/img4.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
     <div class="about">
       <div class="about_img"><img src="./images/about.jpg" alt="" /></div>
       <div class="about_content">
@@ -740,7 +654,8 @@
       </div>
     </footer>
 
-    <!-- Swiper JS -->
+    <!-- Slider JS -->
+    <script src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
       function animateProgressBar(progressBar, duration) {
