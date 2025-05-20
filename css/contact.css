@@ -10,7 +10,7 @@
   }
 }
 :root {
-  --color-primary: #6120d7;
+  --color-primary: #e2321b;
   --color-secondary: #39414e;
   --color-tertiary: #aab5c3;
 
@@ -42,7 +42,7 @@ body {
 }
 
 header {
-    background-color: #5cb85c; /* A nice green */
+    background-color: #c02b26; /* A nice purple */
     color: #fff;
     padding: 2em 0;
     text-align: center;
@@ -109,7 +109,7 @@ nav a.active {
 .contact-details h2,
 .contact-form h2,
 .connect-social h2 {
-    color: #5cb85c;
+    color: #8644bd;
     border-bottom: 3px solid #d9edf7; /* Light blue accent */
     padding-bottom: 15px;
     margin-bottom: 20px;
